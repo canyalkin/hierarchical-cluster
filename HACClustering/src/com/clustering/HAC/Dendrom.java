@@ -37,7 +37,7 @@ public class Dendrom {
 	}
 	
 	public double getLevelDistance(int level){
-		if( !(levels != null && level<=0 && level < levels.size()) ){
+		if( (levels == null || level<=0 || level >= levels.size()) ){
 			return -1;
 		}
 		return levels.get(level).getDistance();
